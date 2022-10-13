@@ -24,6 +24,7 @@ namespace DevFest22Asyut.Controllers
             )
         {
             _blogService = blogService;
+            _environment = environment;
         }
 
         public IActionResult Index()
