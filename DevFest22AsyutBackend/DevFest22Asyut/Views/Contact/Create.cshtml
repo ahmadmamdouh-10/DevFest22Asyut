@@ -1,0 +1,44 @@
+﻿@model DevFest22Asyut.ViewModels.ContactInfoViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<form method="post" asp-action="Create" asp-controller="Contact" asp-area="" class="ml-5">
+
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control col-lg-4 col-md-6 col-sm-12" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Facebook"></label>
+        <input asp-for="Facebook" class="form-control col-lg-4 col-md-6 col-sm-12" />
+        <span asp-validation-for="Facebook" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="LinkedIn"></label>
+        <input asp-for="LinkedIn" class="form-control col-lg-4 col-md-6 col-sm-12" />
+        <span asp-validation-for="LinkedIn" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Twitter"></label>
+        <input asp-for="Twitter" class="form-control col-lg-4 col-md-6 col-sm-12" />
+        <span asp-validation-for="Twitter" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Youtube"></label>
+        <input asp-for="Youtube" class="form-control col-lg-4 col-md-6 col-sm-12" />
+        <span asp-validation-for="Youtube" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+@section scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

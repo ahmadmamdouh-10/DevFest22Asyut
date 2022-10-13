@@ -1,0 +1,35 @@
+﻿@model DevFest22Asyut.ViewModels.ContactInfoViewModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<table class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Facebook</th>
+            <th>LinkedIn</th>
+            <th>Twitter</th>
+            <th>YouTube</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>@Model.Email</td>
+            <td>@Model.Facebook</td>
+            <td>@Model.LinkedIn</td>
+            <td>@Model.Twitter</td>
+            <td>@Model.Youtube</td>
+            <td>
+                <a asp-action="Edit" asp-controller="Contact" asp-area="" asp-route-id="@Model.Id" class="btn btn-primary btn-sm">
+                    <i class="fa fa-pen"></i>
+                </a>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
