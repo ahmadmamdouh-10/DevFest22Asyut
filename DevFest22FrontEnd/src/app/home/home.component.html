@@ -1,0 +1,193 @@
+<!-- Hero Start -->
+<div class="hero">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-sm-12 col-md-6">
+        <div class="hero-text">
+          <h1 style="margin-bottom: 35px;">We'are the Bridge to </h1>
+          <h1>the Global Audience </h1>
+          <p>
+            Fast and Easy Professional Translation Service!
+            Lets start a project now
+          </p>
+
+          <div class="hero-btn">
+            <a class="btn" (click)="openModal(contactTemplate)">GET A QUOTE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 d-none d-md-block">
+        <div class="hero-image">
+          <img src="assets/img/header.png" alt="Hero Image">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hero End -->
+
+<!-- AboutUs Start -->
+<div class="aboutus wow zoomIn" data-wow-delay="0.1s" style="margin-top:0">
+  <div class="container about-res ml-10" style="padding: 0;">
+    <div class="container aboutus-text p-0" style="margin: 0;">
+      <div class="section-header text-center">
+        <h2 style=" font-size: 60px ; margin: 0; padding: 0;">ABOUT US</h2>
+      </div>
+      <!-- <p *ngIf="(aboutUs$ | async) as about">
+                    {{about[0]?.description}}
+                </p> -->
+      <div class="about-body row" style="margin-top: 25px;">
+        <div class="col-12">
+          <span style="color: white; padding-top: 20px;" *ngIf="(aboutUs$ | async) as about">
+            <strong style="color: #F7CAC9; font-size: 30px; text-indent: 50px;text-align: justify;letter-spacing: 3px;">{{about[0]?.Title}}</strong>
+            {{about[0]?.description}}
+          </span>
+        </div>
+        <div class="text-center" style="margin-bottom: 25px;">
+          <a routerLink="about" class="btn text-center" style="margin-left: 270px; margin-top: 30px;">Read More </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- AboutUs End -->
+
+
+<!--Quality & Standards Start-->
+
+<div class="container-fluid text-center" style="padding-bottom: 45px; background-color: #B2E1FF;">
+  <div class="row">
+    <div class="col-12">
+      <h2 style="font-weight: 700; font-size: 50px; margin: 45px 0px;">
+        Our Quality Control process
+      </h2>
+      <div class="card mb-3" style="max-width: 540px; float: left; margin-left: 80px; box-shadow: 5px;" *ngFor="let item of qualities">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img [src]="item.image" class="img-fluid rounded-start w-300" style="height: 300px;" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-text"  [textContent]="item.description" ></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions"  *ngFor="let item of qualities;let index = index" [attr.data-slide-to]="index"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item" *ngFor="let item of qualities;let index = index;let isFirst = first" [ngClass]="{active:isFirst}">
+            <img [src]="item.image" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <p [textContent]="item.description"></p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> -->
+  </div>
+
+
+    <!--Quality & Standards End-->
+
+
+    <!-- Industry Start -->
+    <!-- <div class="industry">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 style="font-weight: 700;">INDUSTRIES</h2>
+            </div>
+            <div class="">
+                <owl-carousel-o [options] = "options">
+                    <ng-template *ngFor="let industry of (industries$ |async)" carouselSlide>
+                        <div class="wow fadeInUp" data-wow-delay="0.0s">
+                            <div class="industry-item">
+                                <div class="industry-icon">
+                                    <img [src]="industry?.icon" width="50" height="50" alt="">
+                                </div>
+                                <h3>{{industry.title |uppercase}}</h3>
+                                <a style="background:#e72d87;border-color:#e72d87" routerLink="industries" class="btn btn-primary">READ MORE</a>
+                            </div>
+                        </div>
+
+                    </ng-template>
+
+
+                </owl-carousel-o>
+
+            </div>
+        </div>
+    </div> -->
+    <!-- Industry End -->
+
+
+    <ng-template #contactTemplate>
+      <div class="my-form">
+        <div class="modal-header">
+          <h2>CONTACT FORM</h2>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div *ngIf="success" class="alert alert-info">Message Send Successfully</div>
+          <form #form="ngForm" (ngSubmit)="sendMessage(form)">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <i class="input-group-text fa fa-user text-center"></i>
+              </div>
+              <input #name="ngModel" name="name" ngModel required type="text" class="form-control" placeholder="Name">
+              <div *ngIf="!name.valid &&name.touched" class="text-danger w-100">
+                This field is Reuired.
+              </div>
+            </div>
+
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <i class="input-group-text fa fa-envelope text-center"></i>
+              </div>
+              <input #email="ngModel" name="email" ngModel required type="text" class="form-control"
+                placeholder="Email">
+              <div *ngIf="!email.valid &&email.touched" class="text-danger w-100">
+                This field is Reuired.
+              </div>
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <i class="input-group-text fa fa-phone text-center"></i>
+              </div>
+              <input #phone="ngModel" name="phoneNumber" ngModel required type="text" class="form-control"
+                placeholder="Phone Number">
+              <div *ngIf="!phone.valid &&phone.touched" class="text-danger w-100">
+                This field is Reuired.
+              </div>
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <i class="input-group-text fa fa-comments text-center"></i>
+              </div>
+              <textarea #message="ngModel" name="message" ngModel required rows="4" class="form-control"
+                placeholder="Message"></textarea>
+              <div *ngIf="!message.valid &&message.touched" class="text-danger w-100">
+                This field is Reuired.
+              </div>
+            </div>
+
+            <button class="btn btn-secondary" type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+
+    </ng-template>

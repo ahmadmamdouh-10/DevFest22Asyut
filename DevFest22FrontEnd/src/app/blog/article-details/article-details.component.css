@@ -1,0 +1,38 @@
+.page-header{
+    margin-bottom:0 ;
+}
+/*******************************/
+/********** Blog CSS **********/
+/*******************************/
+.blog {
+    width: 100%;
+    padding: 45px 0 65px;
+    background-color: #F7F7F9;
+    margin-bottom: -45px;
+}
+
+.blog img {
+    max-height: 500px;
+}
+
+.blog img {
+    max-height: 300px;
+}
+.blog .card-body h5{
+    margin: 25px 0 40px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.blog .card-body .card-text{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.blog .card-body .card-text a{
+    color :#e72d87
+}
+
+.blog .card-body .card-text a:hover{
+    color :black
+}

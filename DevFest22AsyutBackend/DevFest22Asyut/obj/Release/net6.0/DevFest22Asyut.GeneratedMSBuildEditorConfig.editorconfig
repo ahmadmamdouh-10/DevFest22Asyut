@@ -8,81 +8,81 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DevFest22Asyut
 build_property.RootNamespace = DevFest22Asyut
-build_property.ProjectDir = C:\Users\ahmed.mamdouh\source\repos\DevFest22Asyut\DevFest22Asyut\
+build_property.ProjectDir = C:\Users\a-mamdouh\source\repos\DevFest22\DevFest22AsyutBackend\DevFest22Asyut\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ahmed.mamdouh\source\repos\DevFest22Asyut\DevFest22Asyut
+build_property.MSBuildProjectDirectory = C:\Users\a-mamdouh\source\repos\DevFest22\DevFest22AsyutBackend\DevFest22Asyut
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/AboutUs/Create.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/AboutUs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/AboutUs/Edit.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/AboutUs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/AboutUs/Index.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/AboutUs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/Blog/Create.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/Blog/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/Blog/Edit.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/Blog/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/Blog/Index.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/Blog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/Contact/Create.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/Contact/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/Contact/Edit.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/Contact/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/Contact/Index.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/Contact/Messages.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/Contact/Messages.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxNZXNzYWdlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/Home/Index.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/Home/Privacy.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/Shared/Error.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/_ViewImports.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/_ViewStart.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ahmed.mamdouh/source/repos/DevFest22Asyut/DevFest22Asyut/Views/Shared/_Layout.cshtml]
+[C:/Users/a-mamdouh/source/repos/DevFest22/DevFest22AsyutBackend/DevFest22Asyut/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-e2vxm12p9n

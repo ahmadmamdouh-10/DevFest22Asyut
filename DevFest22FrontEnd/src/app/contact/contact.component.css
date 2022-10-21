@@ -1,0 +1,53 @@
+.page-header{
+    margin-bottom:0 ;
+}
+/*******************************/
+/********** Contact CSS **********/
+/*******************************/
+.contact {
+    width: 100%;
+    padding: 45px 0 65px;
+    background-color: #F7F7F9;
+    margin-bottom: -45px;
+}
+
+
+.contact .address h2{
+    margin: 8px 0 20px;
+    font-weight: 700;
+}
+
+.contact .address h4{
+    margin: 8px 0 15px;
+    font-weight: 600;
+}
+
+.contact .address p{
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.contact .my-form h2{
+    margin: 8px 0 50px;
+    font-weight: 700;
+}
+
+.contact .my-form input{
+    min-height: 42px;
+}
+
+.contact .my-form i {
+    padding: 10px;
+    color: green;
+}
+
+
+
+.my-form:target{
+  display: block;
+}
+
+
+.form-check-input{
+  margin: 12px 0;
+}

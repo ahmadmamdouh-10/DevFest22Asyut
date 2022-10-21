@@ -1,0 +1,27 @@
+    <!-- Page Header Start -->
+    <div class="page-header" style="padding-bottom: 50px; margin-bottom: 70px;" >
+      <div class="container" >
+          <div class="row" >
+              <div class="col-12" style="padding-top: 15px;">
+                  <h2>About Us</h2>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Page Header End -->
+
+  <section class="section section-50 section-md-90 section-xl-top-120 section-xl-bottom-145"
+       id="section-start-journey">
+  <div class="container">
+          <div class="row row-40 row-md-60 align-items-lg-end justify-content-lg-center" *ngFor="let about of (abouts$ |async)">
+              <div class="col-md-12 wow fadeInLeftSmall" data-wow-duration="1s" data-wow-offset="200">
+                  <h2 style="color: #B2E1FF;">{{about.title |uppercase}}</h2>
+                  <p>
+                    {{about.description}}
+                  </p>
+              </div>
+          </div>
+  </div>
+</section>
+
+

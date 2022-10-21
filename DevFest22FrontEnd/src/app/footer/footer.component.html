@@ -1,0 +1,36 @@
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info overflow-hidden">
+                        <a href="index.html" class="footer-logo">Dev<span>Fest</span>22</a>
+                        <div *ngIf="(infos$|async) as info">
+                            <h3>{{info.offices[0].address}}</h3>
+                            <div class="footer-menu">
+                                <p>{{info.offices[0].telephone}}</p>
+                                <p>{{info.email}}</p>
+                            </div>
+                        </div>
+                        <div *ngIf="(infos$|async) as info" class="footer-social">
+                            <a [href]="info.twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="{{info.facebook}}"><i class="fa fa-facebook-f"></i></a>
+                            <a href="{{info.youtube}}"><i class="fa fa-youtube"></i></a>
+                            <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                            <a href="{{info.linkedIn}}"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">DevFest22</a>, All Right Reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Designed By <a href="http://www.yackeensolution.com">GDG Web Team</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->

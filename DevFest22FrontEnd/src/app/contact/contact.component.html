@@ -1,0 +1,295 @@
+<!-- Page Header Start -->
+<div class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>CONTACT US</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Page Header End -->
+
+
+
+<!-- Language Start -->
+<div class="contact">
+  <div class="container-fluid">
+    <div class="row align-items-start">
+      <div class="col-7">
+        <div class="container">
+
+
+          <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#contactus">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#joinus">Join us</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="contactus" class="tab-pane fade in active show">
+              <div class="col-md-12 col-sm-12 my-form">
+                <h2>CONTACT FORM</h2>
+
+                <form #form="ngForm" (ngSubmit)="sendMessage(form)">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-user text-center"></i>
+                    </div>
+                    <input #name="ngModel" name="name" ngModel required type="text" class="form-control"
+                      placeholder="Name">
+                    <div *ngIf="!name.valid &&name.touched" class="text-danger w-100">
+                      This field is Reuired.
+                    </div>
+                  </div>
+
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-envelope text-center"></i>
+                    </div>
+                    <input #email="ngModel" name="email" ngModel required type="text" class="form-control"
+                      placeholder="Email">
+                    <div *ngIf="!email.valid &&email.touched" class="text-danger w-100">
+                      This field is Reuired.
+                    </div>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-phone text-center"></i>
+                    </div>
+                    <input #phone="ngModel" name="phoneNumber" ngModel required type="text" class="form-control"
+                      placeholder="Phone Number">
+                    <div *ngIf="!phone.valid &&phone.touched" class="text-danger w-100">
+                      This field is Reuired.
+                    </div>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-comments text-center"></i>
+                    </div>
+                    <textarea #message="ngModel" name="message" ngModel required rows="4" class="form-control"
+                      placeholder="Message"></textarea>
+                    <div *ngIf="!message.valid &&message.touched" class="text-danger w-100">
+                      This field is Reuired.
+                    </div>
+                  </div>
+
+                  <button class="btn btn-secondary" type="submit">SEND</button>
+                <div *ngIf="success" class="alert alert-info">Message Send Successfully</div>
+                </form>
+              </div>
+            </div>
+
+
+            <div id="joinus" class="tab-pane fade">
+              <div class="col-md-12 col-sm-12 my-form">
+                <h2>Join Us</h2>
+
+                <form #form2="ngForm" (ngSubmit)="joinUs(form2)">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-user text-center"></i>
+                    </div>
+                    <input #fullName="ngModel" name="FullName" ngModel required type="text" class="form-control"
+                      placeholder="Full Name">
+                    <div *ngIf="!fullName.valid &&fullName.touched" class="text-danger w-100">
+                      This field is Reuired.
+                    </div>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-envelope text-center"></i>
+                    </div>
+                    <input #email="ngModel" name="Email" ngModel required type="email" class="form-control"
+                      placeholder="Email">
+                    <div *ngIf="!email.valid && email.touched" class="text-danger w-100">
+                      This field is Reuired.
+                    </div>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-phone text-center"></i>
+                    </div>
+                    <input #phone="ngModel" name="PhoneNumber" ngModel required type="text" class="form-control"
+                      placeholder="Phone Number">
+                    <div *ngIf="!phone.valid && phone.touched" class="text-danger w-100">
+                      This field is Reuired.
+                    </div>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-comments text-center"></i>
+                    </div>
+                    <input #skype="ngModel" name="Skype" ngModel required type="text" class="form-control"
+                      placeholder="Skype">
+                    <!-- <div *ngIf="!skype.valid && skype.touched" class="text-danger w-100">
+                      This field is Reuired.
+                    </div> -->
+                  </div>
+
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-comments text-center"></i>
+                    </div>
+                    <input #prozcom="ngModel" name="ProzComAccount" ngModel type="text" class="form-control"
+                      placeholder="Proz.com Account ">
+                  </div>
+
+                     <!--Droplist-->
+                     <!-- <input #nationality="ngModel" name="Nationality" ngModel required type="text" class="form-control"
+                      placeholder="Nationality ">
+                       -->
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-comments text-center">Select Your Nationality</i>
+                    </div>
+
+                    <select  class="selectpicker form-control dropdown mt-4 ml-3" id="nationality" name="Nationality" #nationality="ngModel" ngModel data-live-search="true">
+                      <option *ngFor="let nationality of nationalities " [value]="nationality.id">{{nationality.title}}</option>
+                   </select>
+
+                    <div *ngIf="!nationality.valid &&nationality.touched" class="text-danger w-100">
+                      This field is Reuired.
+                    </div>
+                  </div>
+
+                     <!--Droplist-->
+                     <!-- <input #location="ngModel" name="Location" type="text" ngModel class="form-control"
+                     placeholder="Location ">
+                      -->
+                     <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-comments text-center">Select Your Location</i>
+
+                    <select  class="selectpicker form-control dropdown mt-4 ml-3" id="location" name="Location" #location="ngModel" ngModel data-live-search="true">
+                      <option *ngFor="let location of locations" [value]="location.id">{{location.title}}</option>
+                   </select>
+
+
+                   <div *ngIf="!location.valid &&location.touched" class="text-danger w-100">
+                    This field is Reuired.
+                  </div>
+                    </div>
+
+                  </div>
+
+                     <!--Droplist-->
+
+                     <!-- <input #mthrlang="ngModel" name="MotherLanguage" ngModel required type="text" class="form-control"
+                     placeholder="Mother Language "> -->
+                     <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-comments text-center"> Choose Mother Language</i>
+                    </div>
+
+                    <select  class="selectpicker form-control dropdown mt-4 ml-3" id="MotherLanguage" name="MotherLanguage" #mthrlang="ngModel" ngModel data-live-search="true">
+                      <option *ngFor="let MotherLanguage of motherLanguages" [value]="MotherLanguage.id">{{MotherLanguage.title}}</option>
+                   </select>
+
+                    <div *ngIf="!mthrlang.valid &&mthrlang.touched" class="text-danger w-100">
+                      This field is Reuired.
+                    </div>
+                  </div>
+
+
+                  <!-- <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-comments text-center"></i>
+                    </div>
+                    <input #lnpairprovide="ngModel" name="LanguagePairsYouProvide" ngModel required type="text"
+                      class="form-control" placeholder="Languages Pairs you provide, For Example: source/target, Chinese/English ">
+                    <div *ngIf="!lnpairprovide.valid &&lnpairprovide.touched" class="text-danger w-100">
+                      This field is Reuired.
+                    </div>
+                  </div> -->
+
+
+                  <!--
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-comments text-center"></i>
+                    </div>
+                      <div class="mb-3">
+                        <label for="ServicesYouProvide" class="form-label">What are the services you
+                          provide?</label>
+                        <input type="text" #ServiceProvide="ngModel" ngModel id="otherService" name="ServicesYouProvide" placeholder="Write your own service">
+                        <div *ngIf="!ServiceProvide.valid&& ServiceProvide.touched" class="text-danger w-100">
+                          This field is Reuired.
+                        </div>
+                      </div>
+                      </div> -->
+
+                  <!-- <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-comments text-center"></i>
+                    </div>
+                    <input #yourRate="ngModel" name="AddYourRate" ngModel required type="text"
+                      class="form-control" placeholder="Add your rates for each language pair with comma separated, For Example: 50$, 60$,..  ">
+                    <div *ngIf="!yourRate.valid &&yourRate.touched" class="text-danger w-100">
+                      This field is Reuired.
+                    </div>
+                  </div> -->
+
+
+<!--
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i class="input-group-text fa fa-comments text-center"></i>
+                    </div>
+                    <div style="align-items: center;" >
+                      <label for="FieldsYouCoverInList" class="form-label">What are the fields you cover *
+                      </label>
+                      </div>
+                      <div class="mb-3">
+                        <input type="text" #fieldsYouCovered="ngModel" ngModel id="FieldsYouCoverInList" name="FieldsYouCoverInList" placeholder="Please add any other fields you support and are not mentioned in the above list.">
+                        <div *ngIf="!fieldsYouCovered.valid && fieldsYouCovered.touched" class="text-danger w-100">
+                          This field is Reuired.
+                        </div>
+                      </div>
+                      </div> -->
+
+                  <button class="btn btn-secondary" type="submit">SEND</button>
+                  <div *ngIf="success" class="alert alert-info">Message Sent Successfully, Open your email for your credentials.</div>
+
+
+                  <div *ngIf="hasError" class="alert alert-info">
+                    Cannot send your request right now, please wait and make sure that all required fields are correctly filled.
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="col-md-4 col-sm-12 bg-white p-3 address">
+        <h2>ADDRESS INFO</h2>
+        <div *ngIf="(contactInfos$|async) as info">
+          <div *ngFor="let office of info.offices">
+            <h4>{{office.name}}</h4>
+            <p>{{office.address}}</p>
+            <p>Telephone : {{office.telephone}}</p>
+            <p>Email : {{info.email}}</p>
+            <!-- <p>
+                                      Location :
+                                      <a target="_blank" style="color:#e72d87" href="https://www.google.com/search?q={{office.location}}">Location</a>
+                                  </p> -->
+            <iframe [src]="linkUrl(office.location) |safe:'resourceUrl'" width="300" height="300" style="border:0;"
+              allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Language End -->

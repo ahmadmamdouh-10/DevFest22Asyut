@@ -1,0 +1,477 @@
+
+/*******************************/
+/********** Hero CSS ***********/
+/*******************************/
+.hero {
+    position: relative;
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 90px 0;
+    /* background: #F7CAC9; */
+    background: #B2E1FF;
+    overflow: hidden;
+}
+
+.hero .container-fluid {
+    padding: 0;
+}
+
+.hero .hero-image {
+    position: relative;
+    text-align: right;
+}
+
+.hero .hero-image img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.hero .hero-text {
+    position: relative;
+    padding-left: 75px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero .hero-text h1 {
+    color: #343148;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero .hero-text p {
+    color: #343148;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero .hero-btn .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #F7CAC9;
+    background: #343148;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.hero .hero-btn .btn:hover {
+    color: #343148;
+    background: #ffffff;
+}
+
+.hero .hero-btn .btn:first-child {
+    margin-right: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .hero .hero-text {
+        padding: 0 15px;
+    }
+
+    .hero .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero .hero-text .btn {
+        padding: 12px 30px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero .hero-text h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .hero .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero .hero-text .btn {
+        padding: 10px 15px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero .hero-text h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .hero .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero .hero-text .btn {
+        padding: 8px 10px;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+}
+
+
+/*******************************/
+/********* Service CSS *********/
+/*******************************/
+.service {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.service .service-item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, .07);
+    transition: .3s;
+}
+/*
+.service .service-item:hover,
+.service .service-item.active {
+    background: #343148;
+    color: #ffffff;
+} */
+
+.service .service-icon {
+    position: relative;
+    margin: 0 auto 25px auto;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.service .service-icon i {
+    position: relative;
+    font-size: 50px;
+    color: #343148;
+    z-index: 3;
+}
+
+.service .service-icon:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #F7CAC9;
+    border-radius: 50%;
+    animation: pulse-border 2000ms ease-out infinite;
+}
+
+.service .service-icon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background:  #F7CAC9;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+    opacity: 0;
+  }
+}
+
+.service .service-item h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.service .service-item:hover{
+    box-shadow: 2px 2px 5px 5px #ddd;
+}
+.service .service-item:hover .service-icon:after,
+.service .service-item:hover .service-icon:before {
+    background-color:#343148;
+}
+
+.service .service-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.service-item .service-icon img
+{
+    z-index: 1000;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+/*******************************/
+/********* AboutUs CSS *********/
+/*******************************/
+.aboutus {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin: 45px 0;
+    padding: 90px 0;
+    background: url(../../assets/img/6.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    z-index: -4;
+
+}
+
+.aboutus .container {
+    max-width: 650px;  /*750*/
+    text-align: center;
+}
+
+.aboutus .section-header {
+    margin-bottom: 20px;
+}
+
+
+.aboutus .section-header h2{
+    color: #FAEDF0;
+    font-weight: 700;
+    font-size: 70px;
+}
+.about-body {
+    color: #F7CAC9;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: rgba(175, 165, 165, 0.671);
+    opacity: 2;
+    z-index: 1;
+    width: 100%;
+
+}
+
+.aboutus .section-header p::after {
+    display: none;
+}
+
+.aboutus .section-header h2 span {
+    color: #F7CAC9;
+    font-size: 50px;
+}
+
+.aboutus .aboutus-text p {
+    /* color: #454545; */
+    color:#151414
+}
+
+.aboutus .aboutus-text .btn {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #F7CAC9;
+  background: #343148;
+  border-radius: 0;
+  transition: .3s;
+}
+
+.aboutus .aboutus-text .btn:hover{
+  color: #343148;
+  background: #ffffff;
+}
+
+@media(max-width:500px){
+    .aboutus {
+        height: 125vh;
+    }
+}
+
+.about-res{
+    padding: 50px;
+    border-radius: 50px;
+}
+@media(max-width:430px){
+    .aboutus {
+        height: 150vh;
+    }
+    .about-res{
+        padding: 30px;
+    }
+}
+
+/*******************************/
+/********* industry CSS *********/
+/*******************************/
+.industry {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+
+    width: 100%;
+    height: 96vh;
+    margin: 45px 0;
+    padding: 90px 0;
+    background: url(../../assets/img/indu-section.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.industry .industry-item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, .07);
+    transition: .3s;
+}
+
+.industry .industry-item,
+.industry .industry-item {
+    background: #343148;
+    color: #ffffff;
+    max-width: 340px;
+}
+
+.industry .industry-icon {
+    position: relative;
+    margin: 0 auto 25px auto;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.industry .industry-icon i {
+    position: relative;
+    font-size: 50px;
+    color: #343148;
+    z-index: 3;
+}
+
+.industry .industry-icon:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #F7CAC9;
+    border-radius: 50%;
+    animation: pulse-border 2000ms ease-out infinite;
+}
+
+.industry .industry-icon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #F7CAC9;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+    opacity: 0;
+  }
+}
+
+.industry .industry-item h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+    min-height: 70px;
+}
+
+.industry .industry-item h3,
+.industry .industry-item h3 {
+    color: #F7CAC9;
+}
+
+.industry .industry-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.industry-item .industry-icon img
+{
+    z-index: 1000;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Quality & Control Section */
+
+.qualitySectionBody{
+  background-color:#161E54;
+  border-radius: 50%;
+  height: 200px;
+  margin: 15px;
+}
+
+.firstColBody{
+  margin-left: 110px !important;
+}
+
+.imgOnBody{
+  background: url(../../assets/img/portfolio-3.jpg);
+}
+
+/* Adding*/
+.card{
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
