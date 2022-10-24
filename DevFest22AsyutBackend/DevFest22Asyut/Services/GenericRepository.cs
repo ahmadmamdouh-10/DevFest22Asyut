@@ -82,6 +82,7 @@ namespace DevFest22Asyut.Services
         {
             if (entity == null)
                 throw new ArgumentNullException(nameof(entity));
+               entity.Id = Guid.NewGuid().ToString();
             _entities.Add(entity);
         }
 
@@ -89,6 +90,10 @@ namespace DevFest22Asyut.Services
         {
             if (entities == null)
                 throw new ArgumentNullException(nameof(entities));
+               foreach (var entity in entities)
+            {
+                entity.Id = Guid.NewGuid().ToString();
+            }
             _entities.AddRange(entities);
         }
 

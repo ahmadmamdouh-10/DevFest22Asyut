@@ -22,7 +22,7 @@ namespace DevFest22Asyut.Controllers
         {
             //List<AboutViewModel> viewModels = new();
 
-            var abouts = _aboutService.GetAll().Select(a => new AboutViewModel() { Id=a.Id,Description=a.Description,Title=a.Title});
+            var abouts = _aboutService.GetAll().Select(a => new AboutViewModel() { Id=a.Id,Description=a.Description,Title=a.Title}).ToList();
 
             //foreach(var about in abouts)
             //{

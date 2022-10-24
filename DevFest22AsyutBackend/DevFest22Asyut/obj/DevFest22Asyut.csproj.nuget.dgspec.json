@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a-mamdouh\\source\\repos\\DevFest22\\DevFest22AsyutBackend\\DevFest22Asyut\\DevFest22Asyut.csproj": {}
+    "C:\\Users\\All in one\\Source\\Repos\\DevFest22Asyut\\DevFest22AsyutBackend\\DevFest22Asyut\\DevFest22Asyut.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a-mamdouh\\source\\repos\\DevFest22\\DevFest22AsyutBackend\\DevFest22Asyut\\DevFest22Asyut.csproj": {
+    "C:\\Users\\All in one\\Source\\Repos\\DevFest22Asyut\\DevFest22AsyutBackend\\DevFest22Asyut\\DevFest22Asyut.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a-mamdouh\\source\\repos\\DevFest22\\DevFest22AsyutBackend\\DevFest22Asyut\\DevFest22Asyut.csproj",
+        "projectUniqueName": "C:\\Users\\All in one\\Source\\Repos\\DevFest22Asyut\\DevFest22AsyutBackend\\DevFest22Asyut\\DevFest22Asyut.csproj",
         "projectName": "DevFest22Asyut",
-        "projectPath": "C:\\Users\\a-mamdouh\\source\\repos\\DevFest22\\DevFest22AsyutBackend\\DevFest22Asyut\\DevFest22Asyut.csproj",
-        "packagesPath": "C:\\Users\\a-mamdouh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a-mamdouh\\source\\repos\\DevFest22\\DevFest22AsyutBackend\\DevFest22Asyut\\obj\\",
+        "projectPath": "C:\\Users\\All in one\\Source\\Repos\\DevFest22Asyut\\DevFest22AsyutBackend\\DevFest22Asyut\\DevFest22Asyut.csproj",
+        "packagesPath": "C:\\Users\\All in one\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\All in one\\Source\\Repos\\DevFest22Asyut\\DevFest22AsyutBackend\\DevFest22Asyut\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\a-mamdouh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\All in one\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -124,8 +125,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -137,7 +137,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -4,6 +4,7 @@
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
+<a asp-action="Create" asp-controller="Contact" asp-area="" class="btn btn-primary">New Contact</a>
 
 <table class="table table-bordered table-hover table-striped">
     <thead>
@@ -18,6 +19,7 @@
     </thead>
 
     <tbody>
+
         <tr>
             <td>@Model.Email</td>
             <td>@Model.Facebook</td>
@@ -26,7 +28,7 @@
             <td>@Model.Youtube</td>
             <td>
                 <a asp-action="Edit" asp-controller="Contact" asp-area="" asp-route-id="@Model.Id" class="btn btn-primary btn-sm">
-                    <i class="fa fa-pen"></i>
+                   edit
                 </a>
             </td>
         </tr>

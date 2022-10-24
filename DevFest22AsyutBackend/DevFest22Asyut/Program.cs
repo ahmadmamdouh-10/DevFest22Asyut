@@ -73,24 +73,7 @@ builder.Services.AddControllersWithViews(options =>
     options.Filters.Add(new AuthorizeFilter(policy));
 });
 
-builder.Services.AddAuthentication()
-                .AddCookie(opts => opts.SlidingExpiration = true)
-                .AddJwtBearer(opts =>
-                {
-                    opts.SaveToken = true;
-                    opts.TokenValidationParameters = new TokenValidationParameters()
-                    {
-                        ValidateAudience = true,
-                        ValidateIssuer = true,
-                        ValidateLifetime = true,
-                        ValidateIssuerSigningKey = true,
-                        ValidAudience = builder.Configuration.GetSection("Setting:Issuer").Value,
-                        ValidIssuer = builder.Configuration.GetSection("Setting:Issuer").Value,
-                        IssuerSigningKey = new SymmetricSecurityKey(
-                            Encoding.UTF8.GetBytes(builder.Configuration.GetSection("Setting:SecretKey").Value)),
-                        ClockSkew = TimeSpan.Zero
-                    };
-                });
+
 
 builder.Services.AddSwaggerGen(setup =>
 {

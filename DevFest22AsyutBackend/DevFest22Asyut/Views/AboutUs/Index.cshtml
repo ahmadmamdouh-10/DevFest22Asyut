@@ -1,4 +1,4 @@
-﻿@model System.Collections.Generic.List<DevFest22Asyut.Models.About>
+﻿@model System.Collections.Generic.List<DevFest22Asyut.ViewModels.AboutViewModel>
 
 @{
     ViewBag.Title = "Index";
@@ -34,11 +34,11 @@
                     <td>@about.Description</td>
                     <td>
                         <a asp-action="Edit" asp-controller="AboutUs" asp-area="" asp-route-id="@about.Id" class="btn btn-primary btn-sm">
-                            <i class="fa fa-pen"></i>
+                           edit
                         </a>
                         <button onclick="return confirm('Are you sure you want to delete this about us')"
                         type="submit" class="btn btn-danger btn-sm">
-                            <i class="fa fa-trash"></i>
+                            delete
 
                         </button>
                     </td>
